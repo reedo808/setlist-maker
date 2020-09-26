@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-md navbar-fixed-top coochs-navbar">
+    <a class="navbar-brand" href="/">
+      <img [src]="brandLogo" />
+    </a>
+    <button class="navbar-toggler coochs-navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav navbar-coochs mr-auto">
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="setTitle( 'Home | Cooch\'s Pooches n Paws' )" class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="setTitle( 'About | Cooch\'s Pooches n Paws' )" class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <a class="nav-link" routerLink="/about">About</a>
+        </li>
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="setTitle( 'Services | Cooch\'s Pooches n Paws' )" class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <a class="nav-link" routerLink="/services">Services</a>
+        </li>
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="setTitle( 'Contact | Cooch\'s Pooches n Paws' )" class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <a class="nav-link" routerLink="/contact">Contact</a>
+        </li>
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="setTitle( 'Testimonials | Cooch\'s Pooches n Paws' )" class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+            <a class="nav-link" routerLink="/testimonials">Testimonials</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com/coochs/" target="_blank">Facebook</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
